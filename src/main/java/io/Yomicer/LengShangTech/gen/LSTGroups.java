@@ -77,7 +77,9 @@ public final class LSTGroups {
     public static final SubItemGroup G20 = new SubItemGroup(
             new NamespacedKey(MagicExpansionHook.plugin(), "lst_20"), LENGSHANG_TECH,
             new CustomItemStack(Material.matchMaterial("LIGHT_BLUE_STAINED_GLASS_PANE"),
-                    "&b&l✦ 机器 · 生产 · 压缩 ✦", "&8———————————"), 10);
+                    "&b&l✦ 机器 · 生产 · 压缩 ✦",
+                    "&8▬▬▬▬▬▬▬▬▬▬▬▬",
+                    "&7▸ 本区: 机器 / 电力 / 材料生成 / 压缩产线"), 10);
 
     /** 机器 */
     public static final SubItemGroup JQ = new SubItemGroup(
@@ -125,7 +127,9 @@ public final class LSTGroups {
     public static final SubItemGroup G26 = new SubItemGroup(
             new NamespacedKey(MagicExpansionHook.plugin(), "lst_26"), LENGSHANG_TECH,
             new CustomItemStack(Material.matchMaterial("MAGENTA_STAINED_GLASS_PANE"),
-                    "&d&l✦ 压缩 · 星际 · 套装 ✦", "&8———————————"), 19);
+                    "&d&l✦ 压缩 · 星际 · 套装 ✦",
+                    "&8▬▬▬▬▬▬▬▬▬▬▬▬",
+                    "&7▸ 本区: 高阶压缩 / 星际 / 箔澜星 / 套装"), 19);
 
     /** 压缩生成器 · 海曼科技院 */
     public static final SubItemGroup YS_HMKJY = new SubItemGroup(
@@ -174,7 +178,9 @@ public final class LSTGroups {
     public static final SubItemGroup G17 = new SubItemGroup(
             new NamespacedKey(MagicExpansionHook.plugin(), "lst_17"), LENGSHANG_TECH,
             new CustomItemStack(Material.matchMaterial("ORANGE_STAINED_GLASS_PANE"),
-                    "&6&l✦ 终章 · 娱乐 · 语录 ✦", "&8———————————"), 28);
+                    "&6&l✦ 终章 · 娱乐 · 语录 ✦",
+                    "&8▬▬▬▬▬▬▬▬▬▬▬▬",
+                    "&7▸ 本区: 终章 / 幸运方块 / 语录 / 娱乐文案"), 28);
 
     /** 终章 */
     public static final SubItemGroup ZHONGZHANG = new SubItemGroup(

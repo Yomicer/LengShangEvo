@@ -77,24 +77,29 @@ public final class LSTRecipeBook implements Listener {
         int pages = Math.max(1, (session.views.size() + PAGE_SIZE - 1) / PAGE_SIZE);
         page = Math.max(0, Math.min(page, pages - 1));
         Inventory menu = Bukkit.createInventory(null, 54,
-                ChatColor.translateAlternateColorCodes('&', "&b" + session.title + " &e(" + (page + 1) + "/" + pages + ")"));
+                ChatColor.translateAlternateColorCodes('&', "&b&l❄ " + session.title + " &7(" + (page + 1) + "/" + pages + ")"));
 
-        ItemStack border = named(Material.LIGHT_BLUE_STAINED_GLASS_PANE, " ");
-        for (int slot : new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 51, 52, 53 }) {
-            menu.setItem(slot, border);
-        }
+        io.Yomicer.LengShangTech.utils.LSTUi.decorate(menu,
+                io.Yomicer.LengShangTech.utils.LSTUi.FROST_EDGE,
+                io.Yomicer.LengShangTech.utils.LSTUi.FROST_CORNER);
+        menu.setItem(4, io.Yomicer.LengShangTech.utils.LSTUi.title(Material.KNOWLEDGE_BOOK,
+                "§b§l❄ 配方列表",
+                "§7共 §e" + session.views.size() + " §7条配方",
+                "§7第 §e" + (page + 1) + " §7/ §e" + pages + " §7页",
+                "§8────────────",
+                "§7每格为一条配方, 悬停查看材料与产物"));
 
         int from = page * PAGE_SIZE;
         for (int i = 0; i < PAGE_SIZE && from + i < session.views.size(); i++) {
             menu.setItem(ITEM_SLOTS[i], display(session.views.get(from + i)));
         }
         if (page > 0) {
-            menu.setItem(48, named(Material.ARROW, "§e上一页"));
+            menu.setItem(48, io.Yomicer.LengShangTech.utils.LSTUi.prevButton(page + 1, pages));
         }
         if (page < pages - 1) {
-            menu.setItem(50, named(Material.ARROW, "§e下一页"));
+            menu.setItem(50, io.Yomicer.LengShangTech.utils.LSTUi.nextButton(page + 1, pages));
         }
-        menu.setItem(49, named(Material.BARRIER, "§c关闭"));
+        menu.setItem(49, io.Yomicer.LengShangTech.utils.LSTUi.closeButton());
         player.openInventory(menu);
     }
 
@@ -282,7 +287,7 @@ public final class LSTRecipeBook implements Listener {
             menu.setItem(layout.output[i], detailDisplay(outputs.get(i)));
         }
         // 3. 返回键 (叠加在一个装饰槽上, 不占用输入/输出槽)
-        menu.setItem(returnSlot, named(Material.BARRIER, "§c« 返回"));
+        menu.setItem(returnSlot, io.Yomicer.LengShangTech.utils.LSTUi.backButton());
         player.openInventory(menu);
     }
 
@@ -320,32 +325,33 @@ public final class LSTRecipeBook implements Listener {
         DetailHolder holder = new DetailHolder(detail, page, histSize,
                 DETAIL_BACK_SLOT, DETAIL_PREV_SLOT, DETAIL_NEXT_SLOT);
         Inventory menu = Bukkit.createInventory(holder, 54,
-                ChatColor.translateAlternateColorCodes('&', "&b配方明细 &e(" + (page + 1) + "/" + pages + ")"));
+                ChatColor.translateAlternateColorCodes('&', "&b&l❄ 配方明细 &7(" + (page + 1) + "/" + pages + ")"));
         holder.inventory = menu;
 
-        // 中立色边框 (顶/底行), 输入区用蓝色特色边、输出区用橙色特色边
-        ItemStack neutral = named(Material.BLACK_STAINED_GLASS_PANE, " ");
-        for (int i = 0; i < 54; i++) {
-            menu.setItem(i, neutral);
-        }
-        ItemStack inputEdge = named(Material.BLUE_STAINED_GLASS_PANE, " ");
+        // 霜寒底 + 外框, 再叠加输入/输出分区的特色边与标签
+        io.Yomicer.LengShangTech.utils.LSTUi.decorate(menu,
+                io.Yomicer.LengShangTech.utils.LSTUi.FROST_EDGE,
+                io.Yomicer.LengShangTech.utils.LSTUi.FROST_CORNER);
+        ItemStack inputEdge = io.Yomicer.LengShangTech.utils.LSTUi.pane(
+                io.Yomicer.LengShangTech.utils.LSTUi.INPUT_ACCENT);
         for (int slot : new int[] { 17, 26 }) {
-            menu.setItem(slot, inputEdge);
+            menu.setItem(slot, inputEdge.clone());
         }
-        ItemStack outputEdge = named(Material.ORANGE_STAINED_GLASS_PANE, " ");
+        ItemStack outputEdge = io.Yomicer.LengShangTech.utils.LSTUi.pane(
+                io.Yomicer.LengShangTech.utils.LSTUi.OUTPUT_ACCENT);
         for (int slot : new int[] { 35, 44 }) {
-            menu.setItem(slot, outputEdge);
+            menu.setItem(slot, outputEdge.clone());
         }
-        menu.setItem(4, named(Material.KNOWLEDGE_BOOK, "§b配方明细",
+        menu.setItem(4, named(Material.KNOWLEDGE_BOOK, "§b§l❄ 配方明细",
                 List.of("§7第 §e" + (page + 1) + " §7/ §e" + pages + " §7页")));
         int inCount = detail.getInputs().size();
         int outCount = detail.getOutputs().size();
-        ItemStack inputLabel = named(Material.BLUE_STAINED_GLASS_PANE,
-                "§9§l输入材料 §7(" + inCount + " 种)", zoneLore(inCount, page, inputPages));
+        ItemStack inputLabel = named(Material.LIGHT_BLUE_STAINED_GLASS_PANE,
+                "§b§l▏输入材料 §7(" + inCount + " 种)", zoneLore(inCount, page, inputPages));
         menu.setItem(9, inputLabel);
         menu.setItem(18, inputLabel);
         ItemStack outputLabel = named(Material.ORANGE_STAINED_GLASS_PANE,
-                "§6§l输出产物 §7(" + outCount + " 种)", zoneLore(outCount, page, outputPages));
+                "§6§l▏输出产物 §7(" + outCount + " 种)", zoneLore(outCount, page, outputPages));
         menu.setItem(27, outputLabel);
         menu.setItem(36, outputLabel);
 
@@ -353,12 +359,12 @@ public final class LSTRecipeBook implements Listener {
         placeDetailItems(menu, DETAIL_OUTPUT_SLOTS, detail.getOutputs(), page);
 
         if (page > 0) {
-            menu.setItem(DETAIL_PREV_SLOT, named(Material.ARROW, "§e« 上一页"));
+            menu.setItem(DETAIL_PREV_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.prevButton(page + 1, pages));
         }
         if (page < pages - 1) {
-            menu.setItem(DETAIL_NEXT_SLOT, named(Material.ARROW, "§e下一页 »"));
+            menu.setItem(DETAIL_NEXT_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.nextButton(page + 1, pages));
         }
-        menu.setItem(DETAIL_BACK_SLOT, named(Material.BARRIER, "§c« 返回"));
+        menu.setItem(DETAIL_BACK_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.backButton());
         player.openInventory(menu);
     }
 

@@ -75,10 +75,7 @@ public final class LSTShopMenu implements Listener {
     private static final int[] ITEM_SLOTS = {
             10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43
     };
-    private static final int[] BORDER_SLOTS = {
-            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 46, 47, 51, 52, 53
-    };
-    private static final int BACK_SLOT = 45;
+    private static final int BACK_SLOT = 49;
     private static final int PREV_SLOT = 48;
     private static final int NEXT_SLOT = 50;
 
@@ -178,16 +175,22 @@ public final class LSTShopMenu implements Listener {
         Inventory menu = Bukkit.createInventory(holder, 54, MAIN_TITLE);
         holder.setInventory(menu);
 
-        ItemStack border = simple(Material.PINK_STAINED_GLASS_PANE, " ");
-        for (int slot : BORDER_SLOTS) {
-            menu.setItem(slot, border);
-        }
-        menu.setItem(4, simple(Material.PAINTING, color("&c❀ 聚宝阁 ❀"),
-                color("&f点击分类查看可购买物品"), color("&e左键×1  右键×16"),
-                color("&eShift+左键×64  Shift+右键全买")));
+        io.Yomicer.LengShangTech.utils.LSTUi.decorate(menu,
+                io.Yomicer.LengShangTech.utils.LSTUi.TREASURE_EDGE,
+                io.Yomicer.LengShangTech.utils.LSTUi.TREASURE_CORNER);
+        menu.setItem(4, io.Yomicer.LengShangTech.utils.LSTUi.title(Material.NETHER_STAR,
+                color("&6&l❀ 聚 宝 阁 ❀"),
+                color("&7甄选珍品, 明码标价"),
+                color("&8────────────────"),
+                color("&f点击下方分类查看可购买物品"),
+                color("&e左键 &7购买 ×1"),
+                color("&e右键 &7购买 ×16"),
+                color("&eShift+左键 &7购买 ×64"),
+                color("&eShift+右键 &7一键全买")));
         for (Category category : CATEGORIES) {
             if (category.slot() >= 0 && category.slot() < 54) {
-                menu.setItem(category.slot(), simple(category.icon(), category.name(), color("&7点击查看该分类")));
+                menu.setItem(category.slot(), simple(category.icon(), category.name(),
+                        color("&7▸ 点击查看该分类商品")));
             }
         }
         player.openInventory(menu);
@@ -199,27 +202,43 @@ public final class LSTShopMenu implements Listener {
         int pages = Math.max(1, (items.size() + ITEM_SLOTS.length - 1) / ITEM_SLOTS.length);
         page = Math.max(0, Math.min(page, pages - 1));
 
+        String categoryName = categoryName(categoryId);
         ShopHolder holder = new ShopHolder(categoryId, page);
         Inventory menu = Bukkit.createInventory(holder, 54,
-                color("&c❀ 聚宝阁 · " + categoryId + " ❀ (" + (page + 1) + "/" + pages + ")"));
+                color("&6❀ 聚宝阁 · ") + ChatColor.stripColor(categoryName)
+                        + color(" &7(" + (page + 1) + "/" + pages + ")"));
         holder.setInventory(menu);
 
-        ItemStack border = simple(Material.PINK_STAINED_GLASS_PANE, " ");
-        for (int slot : BORDER_SLOTS) {
-            menu.setItem(slot, border);
-        }
+        io.Yomicer.LengShangTech.utils.LSTUi.decorate(menu,
+                io.Yomicer.LengShangTech.utils.LSTUi.TREASURE_EDGE,
+                io.Yomicer.LengShangTech.utils.LSTUi.TREASURE_CORNER);
+        menu.setItem(4, io.Yomicer.LengShangTech.utils.LSTUi.title(Material.PAINTING,
+                categoryName,
+                color("&7共 &e" + items.size() + " &7件商品 · 第 &e" + (page + 1) + "&7/&e" + pages + " &7页"),
+                color("&e左键×1 右键×16 Shift+左键×64 Shift+右键全买")));
+
         int from = page * ITEM_SLOTS.length;
         for (int i = 0; i < ITEM_SLOTS.length && from + i < items.size(); i++) {
             menu.setItem(ITEM_SLOTS[i], display(items.get(from + i)));
         }
         if (page > 0) {
-            menu.setItem(PREV_SLOT, simple(Material.ARROW, color("&e上一页")));
+            menu.setItem(PREV_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.prevButton(page + 1, pages));
         }
         if (page < pages - 1) {
-            menu.setItem(NEXT_SLOT, simple(Material.ARROW, color("&e下一页")));
+            menu.setItem(NEXT_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.nextButton(page + 1, pages));
         }
-        menu.setItem(BACK_SLOT, simple(Material.BARRIER, color("&c返回主菜单")));
+        menu.setItem(BACK_SLOT, io.Yomicer.LengShangTech.utils.LSTUi.backButton(color("&7返回聚宝阁主菜单")));
         player.openInventory(menu);
+    }
+
+    /** 分类 ID → 显示名 (取不到则回退 ID)。 */
+    private static String categoryName(String categoryId) {
+        for (Category category : CATEGORIES) {
+            if (category.id().equals(categoryId)) {
+                return category.name();
+            }
+        }
+        return categoryId;
     }
 
     private static ItemStack display(ShopItem shopItem) {
@@ -228,11 +247,14 @@ public final class LSTShopMenu implements Listener {
                 : java.util.Objects.requireNonNullElse(iconOf(shopItem.id()), new ItemStack(Material.PAPER));
         ItemMeta meta = item.getItemMeta();
         List<String> lore = new ArrayList<>();
-        lore.add(color("&f------&a&l点击购买&f------"));
+        lore.add(color("&8✦ ──────────── ✦"));
+        lore.add(color("&6&l售价"));
         for (Price price : shopItem.prices()) {
-            lore.add(color("&a售价: " + price.amount() + " 个 " + nameOf(price.currency())));
+            lore.add(color("&7▸ &e" + price.amount() + " &7个 &f" + nameOf(price.currency())));
         }
-        lore.add(color("&e左键×1 右键×16 Shift+左键×64 Shift+右键全买"));
+        lore.add(color("&8✦ ──────────── ✦"));
+        lore.add(color("&a左键 &7×1   &a右键 &7×16"));
+        lore.add(color("&aShift+左键 &7×64   &aShift+右键 &7全买"));
         meta.setLore(lore);
         item.setItemMeta(meta);
         return item;

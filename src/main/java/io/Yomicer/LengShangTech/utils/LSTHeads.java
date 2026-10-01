@@ -16,7 +16,10 @@ import java.util.regex.Pattern;
  */
 public final class LSTHeads {
 
-    private static final Pattern TEXTURE_HASH = Pattern.compile("([0-9a-fA-F]{64})");
+    /** URL 里 texture/ 之后的纹理 ID (长度不定, Mojang 偶有 62/63 位)。 */
+    private static final Pattern TEXTURE_URL = Pattern.compile("texture/([0-9a-zA-Z]+)");
+    /** 兜底: 任意 60~64 位十六进制串 (URL 结构异常时用)。 */
+    private static final Pattern TEXTURE_HASH = Pattern.compile("([0-9a-fA-F]{60,64})");
 
     private LSTHeads() {
     }
@@ -42,6 +45,12 @@ public final class LSTHeads {
     public static String hashFromBase64(String base64) {
         try {
             String json = new String(Base64.getDecoder().decode(base64), StandardCharsets.UTF_8);
+            // 优先取 URL 中 texture/ 之后的纹理 ID (不限长度): 修复 63 位哈希被 {64} 正则漏掉、
+            // 退化为默认史蒂夫头的问题 (幸运方块/花朵/树木等)。
+            Matcher url = TEXTURE_URL.matcher(json);
+            if (url.find()) {
+                return url.group(1);
+            }
             Matcher matcher = TEXTURE_HASH.matcher(json);
             if (matcher.find()) {
                 return matcher.group(1);
