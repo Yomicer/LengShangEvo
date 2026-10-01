@@ -1,0 +1,20 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: DIAMOND_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§8黑曜石神甲'
+    lore:
+    - '§6抗火 I'
+    - '§6生命恢复 II'
+    - '§b防辐射'
+    - '§7用黑曜石浇筑制造而成的胸甲'
+    enchants:
+      PROTECTION_EXPLOSIONS: 6
+      PROTECTION_FALL: 6
+      PROTECTION_FIRE: 6
+      PROTECTION_PROJECTILE: 6
+      PROTECTION_ENVIRONMENTAL: 6
+      DURABILITY: 10

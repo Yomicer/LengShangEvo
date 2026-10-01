@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: NETHER_STAR
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"无","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFFFF","bold":false},{"text":"尽","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFCCF","bold":false},{"text":"催","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF99F","bold":false},{"text":"化","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF66F","bold":false},{"text":"剂","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF33F","bold":false}]}'
+    lore:
+    - '§7一即全，全即一'
+    custom-model-data: 2200607
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_无尽催化剂"
+      }

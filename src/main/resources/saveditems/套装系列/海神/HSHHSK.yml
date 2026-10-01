@@ -1,0 +1,49 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: DIAMOND_HELMET
+  meta:
+    ==: ItemMeta
+    meta-type: ARMOR
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"#00BFFF","text":"海神·瀚海圣盔"}],"text":""}'
+    lore:
+      - '§6潮涌能量 V'
+      - '§6水下呼吸 V'
+      - '§6村庄英雄 V'
+      - '§b防辐射'
+      - '§b蜜蜂毒针保护'
+      - '§b鞘翅动能免疫'
+      - '{"extra":[{"bold":false,"italic":false,"color":"#00BFFF","text":"瀚海无垠，圣盔加冕；海神之眼，洞察深渊万顷。"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"#00BFFF","text":"碧波流转，潮声入耳；深海之秘，尽归吾眸。"}],"text":""}'
+    enchants:
+      WATER_WORKER: 255
+      PROTECTION_EXPLOSIONS: 255
+      PROTECTION_FALL: 255
+      PROTECTION_FIRE: 255
+      PROTECTION_PROJECTILE: 255
+      PROTECTION_ENVIRONMENTAL: 255
+      OXYGEN: 255
+      THORNS: 255
+    Unbreakable: true
+    attribute-modifiers:
+      minecraft:generic.armor:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 520.0
+          name: "generic.armor"
+          slot: HEAD
+          uuid: 1200002d-0000-003e-0000-004000000014
+          operation: 0
+      minecraft:generic.armor_toughness:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 520.0
+          name: "generic.armor_toughness"
+          slot: HEAD
+          uuid: 1200002d-0000-003e-0000-004000000015
+          operation: 0
+      minecraft:generic.knockback_resistance:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.1
+          name: "generic.knockback_resistance"
+          slot: HEAD
+          uuid: 1200002d-0000-003e-0000-004000000016
+          operation: 0

@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: LAPIS_BLOCK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§9蓝冰奇点'
+    custom-model-data: 2200629
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_蓝冰奇点"
+      }

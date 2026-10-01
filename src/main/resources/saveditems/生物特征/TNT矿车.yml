@@ -1,0 +1,24 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: SPAWNER
+  meta:
+    ==: ItemMeta
+    meta-type: TILE_ENTITY
+    display-name: '{"text":"","extra":[{"text":"生物特征","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    lore:
+    - '{"text":"","extra":[{"text":"随机掉落于刷怪笼","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"类型: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"Tnt
+      Minecart","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    enchants:
+      minecraft:infinity: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ADDITIONAL_TOOLTIP
+    internal: H4sIAAAAAAAA/0WP3Q7BQBCFTxYNmwji59oLeAG3uKw09QAyZchGu2U7Qt/QY7HdSOfuzJxv5owGNMZZXp5uK7ZipF4JXRWGsbGHO73slnOq8dEYBElCGlGw9qHMGYvCWD45usharBwbRU4AhUlM7z2Ty+qdBwxXiAI0b6GizI6V381ugFFzJSnFX6C8gi8F3bRTsldG16ejd5uus/wbNuXTijdMU348jeNz8puzC+BYoRfemQFfY86VrPkAAAA=
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LOGITECH_ENTITY_FEAT"
+      }
+    blockMaterial: SPAWNER

@@ -1,0 +1,24 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: SPAWNER
+  meta:
+    ==: ItemMeta
+    meta-type: TILE_ENTITY
+    display-name: '{"text":"","extra":[{"text":"生物特征","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    lore:
+    - '{"text":"","extra":[{"text":"随机掉落于刷怪笼","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"类型: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"Chest
+      Boat","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    enchants:
+      minecraft:infinity: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ADDITIONAL_TOOLTIP
+    internal: H4sIAAAAAAAA/0WPTQ4BQRCFX9pP6ESMYO8CLmCLJREOIDWjjI7RTU+JmRs6Fj0dUbuq+t6rVxrQSNLCZdc5WzFSz4VyhcHG2MOdXnbFBdV4a/RjS0Ia3Yj2oMwJk5uxnHk6yyK7cCnH1JEACqMNVVsmn9brgBsu0Y2S6V9yc+mxDM7s+xg2N3ZOgj8VJUIp6Ga8J5sz2iEbVf9srdkPWLqnlQCM9/x4Gs+n3XfPPgoThU58ZgJ8AKiP6mP3AAAA
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LOGITECH_ENTITY_FEAT"
+      }
+    blockMaterial: SPAWNER

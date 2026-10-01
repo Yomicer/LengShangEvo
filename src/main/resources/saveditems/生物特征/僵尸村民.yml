@@ -1,0 +1,24 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: SPAWNER
+  meta:
+    ==: ItemMeta
+    meta-type: TILE_ENTITY
+    display-name: '{"text":"","extra":[{"text":"生物特征","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    lore:
+    - '{"text":"","extra":[{"text":"随机掉落于刷怪笼","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"类型: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"Zombie
+      Villager","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB33EB","bold":false}]}'
+    enchants:
+      minecraft:infinity: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    - HIDE_ADDITIONAL_TOOLTIP
+    internal: H4sIAAAAAAAA/0WPTQ4BQRCFX9pP6ESMYGHnAi5gi+WIcACpGWXS0dNNT/sZJ3QsWkfUrqreV++VBCSSTNv8NGPjla9nngqBXqrM7kx3s2RNNV4S3diSJ4l2lHYg1AGTUhnOHR39/GnLTPH+prSmgh0gMEjpsWZyWb0KjOIK7ciN/1xps30VzrProv812lgfTEhXCCUgv+MtmYLRDAHp8Q/YmP4EC3s1PgiGW75clePD5rNnF8FEoBU/GgFv9St9N/wAAAA=
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LOGITECH_ENTITY_FEAT"
+      }
+    blockMaterial: SPAWNER

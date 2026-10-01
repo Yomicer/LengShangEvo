@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: IRON_INGOT
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§b水晶矩阵锭'
+    custom-model-data: 2200082
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_水晶矩阵锭"
+      }

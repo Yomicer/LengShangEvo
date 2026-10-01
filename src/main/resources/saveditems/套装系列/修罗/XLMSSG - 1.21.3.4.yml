@@ -1,0 +1,35 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: BOW
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"#ff0040","text":"修罗·灭世神弓"}],"text":""}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"color":"#ff0040","text":"箭出无生，万里追魂。吾箭所指，皆为黄泉引路。"}],"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"color":"#ff0040","text":"弓弦一震，天地失色，灭世之威，藏于箭羽之间。"}],"text":""}'
+    - '{"text":""}'
+    - '{"extra":[{"bold":false,"italic":false,"color":"#ff0040","text":"灭世裁决"},{"bold":false,"italic":false,"color":"gray","text":"：右键拉弓，射出灭世之箭，命中处产生毁灭闪电！"}],"text":""}'
+    enchants:
+      ARROW_DAMAGE: 255
+      ARROW_FIRE: 255
+      ARROW_INFINITE: 255
+      ARROW_KNOCKBACK: 255
+      DURABILITY: 255
+    Unbreakable: true
+    attribute-modifiers:
+      GENERIC_ATTACK_DAMAGE:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 520.0
+        name: generic.attack_damage
+        slot: HAND
+        uuid: 00000001-0002-0003-0004-000000000010
+        operation: 0
+      GENERIC_MOVEMENT_SPEED:   
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 0.5
+        name: generic.movement_speed
+        slot: HAND
+        uuid: 00000001-0002-0003-0004-000000000011
+        operation: 1

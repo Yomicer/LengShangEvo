@@ -1,0 +1,16 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: IRON_INGOT
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"永","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFFFF","bold":false},{"text":"恒","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFCCF","bold":false},{"text":"无","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF99F","bold":false},{"text":"尽","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF66F","bold":false},{"text":"锭","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF33F","bold":false}]}'
+    lore:
+      - '§7超越时空维度的终极物质'
+      - '§7仅一锭便足以扭曲宇宙法则'
+    custom-model-data: 2200606
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_永恒无尽锭"
+      }

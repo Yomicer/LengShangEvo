@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: NETHERITE_SWORD
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"#FFD700","text":"破军"}],"text":""}'
+    lore:
+      - '{"extra":[{"bold":false,"italic":false,"color":"#FFD700","text":"「千军万马，一刃破军」"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"dark_gray","text":"古战场上的杀戮之刃，金芒所至，寸草不生"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"#FFD700","text":"破军"},{"bold":false,"italic":false,"color":"gray","text":"：每次攻击有20%概率造成"},{"bold":false,"italic":false,"color":"#FF4500","text":"双倍伤害"}],"text":""}'
+    enchants:
+      DAMAGE_ALL: 5
+    Unbreakable: true

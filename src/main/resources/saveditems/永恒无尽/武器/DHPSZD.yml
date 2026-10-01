@@ -1,0 +1,17 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: SHIELD
+  meta:
+    ==: ItemMeta
+    meta-type: SHIELD
+    display-name: '{"text":"","extra":[{"text":"地","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFFFF","bold":false},{"text":"核","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFCCF","bold":false},{"text":"磐","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF99F","bold":false},{"text":"石","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF66F","bold":false},{"text":"之","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF33F","bold":false},{"text":"盾","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF00F","bold":false}]}'
+    custom-model-data: 2200689
+    enchants:
+      minecraft:protection: 50
+      minecraft:thorns: 25
+    Unbreakable: true
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_地核磐石之盾"
+      }

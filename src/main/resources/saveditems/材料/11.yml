@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: GRAY_STAINED_GLASS_PANE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[" "]}'
+    custom-model-data: 2200002
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "_UI_BACKGROUND"
+      }

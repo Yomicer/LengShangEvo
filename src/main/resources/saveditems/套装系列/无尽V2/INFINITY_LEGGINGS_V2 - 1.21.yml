@@ -1,0 +1,41 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: NETHERITE_LEGGINGS
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§d无尽护腿 §b§lv2'
+    lore:
+    - '§6急迫 IV'
+    - '§6生命恢复 II'
+    - '§6饱和 II'
+    - '§b防辐射'
+    - '§b蜜蜂毒针保护'
+    - '§b鞘翅动能免疫'
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 35
+      THORNS: 12
+    attribute-modifiers:
+      minecraft:generic.max_health:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 5.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.max_health]
+        slot: LEGS
+        uuid: 3086cdf3-944d-45b2-b39c-5404a129b781
+        operation: 0
+      minecraft:generic.armor:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor]
+        slot: LEGS
+        uuid: a817de79-0f28-42ab-9859-74c3bd093e33
+        operation: 0
+      minecraft:generic.armor_toughness:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor_toughness]
+        slot: LEGS
+        uuid: 08ce84ec-a322-4a82-ab9a-4d58f090a9e4
+        operation: 0
+    Unbreakable: true

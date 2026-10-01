@@ -1,0 +1,8 @@
+name: LengShangEvo
+version: 1.0.0
+main: io.Yomicer.LengShangTech.LengShangEvo
+api-version: '1.21'
+authors: [Yomicer, LengShang]
+description: 冷殇科技
+depend: [Slimefun]
+softdepend: [GuizhanLibPlugin, RykenSlimeCustomizer, RSC_HaimanTech2]

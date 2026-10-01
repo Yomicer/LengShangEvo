@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: BOW
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"§9重箭王"}'
+    lore:
+    - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"一次性射出十只箭！"}],"text":""}'
+    enchants:
+      ARROW_DAMAGE: 5
+      ARROW_FIRE: 1
+      ARROW_INFINITE: 1
+    Unbreakable: true

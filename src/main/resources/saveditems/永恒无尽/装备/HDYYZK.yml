@@ -1,0 +1,52 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: NETHERITE_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"混","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFFFF","bold":false},{"text":"沌","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFCCF","bold":false},{"text":"孕","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF99F","bold":false},{"text":"育","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF66F","bold":false},{"text":"之","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF33F","bold":false},{"text":"铠","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF00F","bold":false}]}'
+    lore:
+    - '§6力量 V'
+    - '§6抗性提升 III'
+    - '§6防火 III'
+    - '§b防辐射'
+    - '§b蜜蜂毒针保护'
+    - '§b鞘翅动能免疫'
+    custom-model-data: 2200646
+    enchants:
+    enchants:
+      minecraft:blast_protection: 50
+      minecraft:fire_protection: 50
+      minecraft:mending: 50
+      minecraft:projectile_protection: 50
+      minecraft:protection: 50
+      minecraft:thorns: 50
+      minecraft:unbreaking: 50
+    attribute-modifiers:
+      minecraft:generic.max_health:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 25.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.max_health]
+        slot: CHEST
+        uuid: 31e012e1-d90f-49fd-94b5-172b36e9f41e
+        operation: 0
+      minecraft:generic.armor:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 20.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor]
+        slot: CHEST
+        uuid: 85db7cc8-f78b-4a60-b4c7-4f89b112f1d4
+        operation: 0
+      minecraft:generic.armor_toughness:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 20.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor_toughness]
+        slot: CHEST
+        uuid: 49ca64b5-9d9a-4b0b-ab56-6048e979f4ec
+        operation: 0
+    Unbreakable: true
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_混沌孕育之铠"
+      }

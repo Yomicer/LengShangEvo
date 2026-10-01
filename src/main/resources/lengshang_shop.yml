@@ -1,0 +1,1266 @@
+# 冷殇聚宝阁商店 (聚宝阁.js 自动转换)
+categories:
+  - id: "树苗"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0树§x§F§F§D§7§0§0苗 §x§3§C§A§F§F§F⚡"
+    icon: OAK_SAPLING
+    slot: 10
+  - id: "花"
+    name: "§x§F§F§0§0§0§0⚡ §x§A§D§F§F§2§F花 §x§3§C§A§F§F§F⚡"
+    icon: PINK_TULIP
+    slot: 11
+  - id: "矿物"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0矿§x§F§F§D§7§0§0物 §x§3§C§A§F§F§F⚡"
+    icon: DIAMOND
+    slot: 12
+  - id: "掉落物"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0掉§x§F§F§D§7§0§0落§x§A§D§F§F§2§F物 §x§3§C§A§F§F§F⚡"
+    icon: BLAZE_ROD
+    slot: 13
+  - id: "杂物"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0杂§x§F§F§D§7§0§0物 §x§3§C§A§F§F§F⚡"
+    icon: POTATO
+    slot: 14
+  - id: "方块"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0方§x§F§F§D§7§0§0块 §x§3§C§A§F§F§F⚡"
+    icon: STONE
+    slot: 15
+  - id: "海洋"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0海§x§F§F§D§7§0§0洋 §x§3§C§A§F§F§F⚡"
+    icon: TUBE_CORAL
+    slot: 16
+  - id: "粘液科技"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0粘§x§F§F§D§7§0§0液 §x§3§C§A§F§F§F⚡"
+    icon: SLIME_BALL
+    slot: 19
+  - id: "合成锭"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0合§x§F§F§D§7§0§0成§x§A§D§F§F§2§F锭 §x§3§C§A§F§F§F⚡"
+    icon: IRON_INGOT
+    slot: 20
+  - id: "制造"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0制§x§F§F§D§7§0§0造 §x§3§C§A§F§F§F⚡"
+    icon: COBBLESTONE
+    slot: 21
+  - id: "刷怪蛋"
+    name: "§x§F§F§0§0§0§0⚡ §x§F§F§A§5§0§0刷§x§F§F§D§7§0§0怪§x§A§D§F§F§2§F蛋 §x§3§C§A§F§F§F⚡"
+    icon: ALLAY_SPAWN_EGG
+    slot: 22
+items:
+  "树苗":
+    - id: OAK_SAPLING
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 8
+    - id: SPRUCE_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: BIRCH_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: JUNGLE_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: ACACIA_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: DARK_OAK_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: CHERRY_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: MANGROVE_PROPAGULE
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: AZALEA
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: FLOWERING_AZALEA
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: CRIMSON_FUNGUS
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: WARPED_FUNGUS
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+    - id: PALE_OAK_SAPLING
+      type: vanilla
+      price:
+        - id: OAK_SAPLING
+          amount: 1
+  "花":
+    - id: POPPY
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 1
+    - id: DANDELION
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: BLUE_ORCHID
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: ALLIUM
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: AZURE_BLUET
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: OXEYE_DAISY
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: CORNFLOWER
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: RED_TULIP
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: ORANGE_TULIP
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: WHITE_TULIP
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: PINK_TULIP
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: LILY_OF_THE_VALLEY
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: SUNFLOWER
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: LILAC
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: ROSE_BUSH
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: PEONY
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: PITCHER_PLANT
+      type: vanilla
+      price:
+        - id: PITCHER_POD
+          amount: 1
+    - id: TORCHFLOWER
+      type: vanilla
+      price:
+        - id: TORCHFLOWER_SEEDS
+          amount: 1
+    - id: PINK_PETALS
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: CHORUS_FLOWER
+      type: vanilla
+      price:
+        - id: CHORUS_FRUIT
+          amount: 8
+    - id: SPORE_BLOSSOM
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: WITHER_ROSE
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: BROWN_MUSHROOM
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+    - id: RED_MUSHROOM
+      type: vanilla
+      price:
+        - id: POPPY
+          amount: 1
+  "矿物":
+    - id: COAL
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 8
+    - id: REDSTONE
+      type: vanilla
+      price:
+        - id: COAL
+          amount: 8
+    - id: LAPIS_LAZULI
+      type: vanilla
+      price:
+        - id: COAL
+          amount: 8
+    - id: QUARTZ
+      type: vanilla
+      price:
+        - id: SOUL_SAND
+          amount: 1
+    - id: COPPER_INGOT
+      type: vanilla
+      price:
+        - id: COAL
+          amount: 4
+    - id: IRON_INGOT
+      type: vanilla
+      price:
+        - id: COAL
+          amount: 8
+    - id: GOLD_INGOT
+      type: vanilla
+      price:
+        - id: IRON_INGOT
+          amount: 4
+    - id: AMETHYST_SHARD
+      type: vanilla
+      price:
+        - id: IRON_INGOT
+          amount: 8
+    - id: DIAMOND
+      type: vanilla
+      price:
+        - id: GOLD_INGOT
+          amount: 8
+    - id: EMERALD
+      type: vanilla
+      price:
+        - id: DIAMOND
+          amount: 8
+    - id: NETHERITE_SCRAP
+      type: vanilla
+      price:
+        - id: EMERALD
+          amount: 16
+    - id: NETHERITE_INGOT
+      type: vanilla
+      price:
+        - id: NETHERITE_SCRAP
+          amount: 4
+  "掉落物":
+    - id: ROTTEN_FLESH
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 1
+    - id: STRING
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 1
+    - id: BONE
+      type: vanilla
+      price:
+        - id: STONE
+          amount: 1
+    - id: GUNPOWDER
+      type: vanilla
+      price:
+        - id: SAND
+          amount: 1
+    - id: SPIDER_EYE
+      type: vanilla
+      price:
+        - id: STRING
+          amount: 4
+    - id: LEATHER
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 4
+    - id: FEATHER
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 4
+    - id: BEEF
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: PORKCHOP
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: MUTTON
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: CHICKEN
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: RABBIT
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: COD
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: SALMON
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: INK_SAC
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 8
+    - id: GLOW_INK_SAC
+      type: vanilla
+      price:
+        - id: INK_SAC
+          amount: 1
+    - id: ENDER_PEARL
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 16
+    - id: BLAZE_ROD
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 32
+    - id: BREEZE_ROD
+      type: vanilla
+      price:
+        - id: BLAZE_ROD
+          amount: 4
+    - id: RABBIT_HIDE
+      type: vanilla
+      price:
+        - id: RABBIT
+          amount: 2
+    - id: RABBIT_FOOT
+      type: vanilla
+      price:
+        - id: RABBIT_HIDE
+          amount: 4
+    - id: WITHER_SKELETON_SKULL
+      type: vanilla
+      price:
+        - id: BONE
+          amount: 64
+    - id: NETHER_STAR
+      type: vanilla
+      price:
+        - id: SOUL_SAND
+          amount: 4
+        - id: WITHER_SKELETON_SKULL
+          amount: 3
+    - id: SHULKER_SHELL
+      type: vanilla
+      price:
+        - id: ENDER_PEARL
+          amount: 16
+    - id: HONEYCOMB
+      type: vanilla
+      price:
+        - id: STRING
+          amount: 16
+    - id: PHANTOM_MEMBRANE
+      type: vanilla
+      price:
+        - id: STRING
+          amount: 16
+    - id: GHAST_TEAR
+      type: vanilla
+      price:
+        - id: SOUL_SAND
+          amount: 4
+    - id: SLIME_BALL
+      type: vanilla
+      price:
+        - id: SUGAR_CANE
+          amount: 4
+    - id: TURTLE_SCUTE
+      type: vanilla
+      price:
+        - id: SLIME_BALL
+          amount: 8
+  "杂物":
+    - id: POTATO
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 64
+    - id: CARROT
+      type: vanilla
+      price:
+        - id: ROTTEN_FLESH
+          amount: 64
+    - id: APPLE
+      type: vanilla
+      price:
+        - id: OAK_LOG
+          amount: 4
+    - id: MELON_SLICE
+      type: vanilla
+      price:
+        - id: APPLE
+          amount: 2
+    - id: SWEET_BERRIES
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: GLOW_BERRIES
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: BAMBOO
+      type: vanilla
+      price:
+        - id: SUGAR_CANE
+          amount: 4
+    - id: WHEAT_SEEDS
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 1
+    - id: PUMPKIN_SEEDS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: MELON_SEEDS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: BEETROOT_SEEDS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: TORCHFLOWER_SEEDS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: PITCHER_POD
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: NETHER_WART
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: WHEAT
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 8
+    - id: PUMPKIN
+      type: vanilla
+      price:
+        - id: PUMPKIN_SEEDS
+          amount: 8
+    - id: MELON
+      type: vanilla
+      price:
+        - id: MELON_SEEDS
+          amount: 8
+    - id: BEETROOT
+      type: vanilla
+      price:
+        - id: BEETROOT_SEEDS
+          amount: 8
+    - id: SUGAR_CANE
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 1
+    - id: POISONOUS_POTATO
+      type: vanilla
+      price:
+        - id: POTATO
+          amount: 8
+    - id: CACTUS
+      type: vanilla
+      price:
+        - id: SAND
+          amount: 4
+    - id: SEA_PICKLE
+      type: vanilla
+      price:
+        - id: SUGAR_CANE
+          amount: 8
+    - id: COCOA_BEANS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 1
+    - id: TURTLE_SCUTE
+      type: vanilla
+      price:
+        - id: SUGAR_CANE
+          amount: 8
+    - id: NAME_TAG
+      type: vanilla
+      price:
+        - id: PAPER
+          amount: 8
+    - id: LAVA_BUCKET
+      type: vanilla
+      price:
+        - id: OBSIDIAN
+          amount: 1
+        - id: BUCKET
+          amount: 1
+    - id: WATER_BUCKET
+      type: vanilla
+      price:
+        - id: BUCKET
+          amount: 1
+    - id: MILK_BUCKET
+      type: vanilla
+      price:
+        - id: BEEF
+          amount: 1
+        - id: BUCKET
+          amount: 1
+    - id: EGG
+      type: vanilla
+      price:
+        - id: CHICKEN
+          amount: 1
+    - id: BROWN_EGG
+      type: vanilla
+      price:
+        - id: EGG
+          amount: 1
+    - id: BLUE_EGG
+      type: vanilla
+      price:
+        - id: EGG
+          amount: 1
+    - id: CHORUS_FRUIT
+      type: vanilla
+      price:
+        - id: END_STONE
+          amount: 8
+    - id: BELL
+      type: vanilla
+      price:
+        - id: GOLD_INGOT
+          amount: 8
+    - id: NAUTILUS_SHELL
+      type: vanilla
+      price:
+        - id: COPPER_INGOT
+          amount: 8
+  "方块":
+    - id: STONE
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 1
+    - id: GRASS_BLOCK
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 8
+    - id: PODZOL
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 8
+    - id: MYCELIUM
+      type: vanilla
+      price:
+        - id: DIRT
+          amount: 8
+    - id: GRAVEL
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 2
+    - id: COBBLED_DEEPSLATE
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 1
+    - id: ICE
+      type: vanilla
+      price:
+        - id: WATER_BUCKET
+          amount: 1
+    - id: CALCITE
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 32
+    - id: TUFF
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 32
+    - id: OBSIDIAN
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: CRYING_OBSIDIAN
+      type: vanilla
+      price:
+        - id: OBSIDIAN
+          amount: 1
+    - id: CRIMSON_NYLIUM
+      type: vanilla
+      price:
+        - id: NETHERRACK
+          amount: 16
+    - id: WARPED_NYLIUM
+      type: vanilla
+      price:
+        - id: NETHERRACK
+          amount: 16
+    - id: SOUL_SAND
+      type: vanilla
+      price:
+        - id: SAND
+          amount: 2
+    - id: BLACKSTONE
+      type: vanilla
+      price:
+        - id: STONE
+          amount: 4
+    - id: BASALT
+      type: vanilla
+      price:
+        - id: STONE
+          amount: 4
+    - id: END_STONE
+      type: vanilla
+      price:
+        - id: STONE
+          amount: 4
+    - id: GLOWSTONE
+      type: vanilla
+      price:
+        - id: STONE
+          amount: 4
+    - id: SEA_LANTERN
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 8
+    - id: BUDDING_AMETHYST
+      type: vanilla
+      price:
+        - id: AMETHYST_SHARD
+          amount: 8
+    - id: SHROOMLIGHT
+      type: vanilla
+      price:
+        - id: NETHERRACK
+          amount: 16
+    - id: COAL_ORE
+      type: vanilla
+      price:
+        - id: COAL
+          amount: 8
+    - id: LAPIS_ORE
+      type: vanilla
+      price:
+        - id: LAPIS_LAZULI
+          amount: 8
+    - id: REDSTONE_ORE
+      type: vanilla
+      price:
+        - id: REDSTONE
+          amount: 8
+    - id: IRON_ORE
+      type: vanilla
+      price:
+        - id: IRON_INGOT
+          amount: 8
+    - id: GOLD_ORE
+      type: vanilla
+      price:
+        - id: GOLD_INGOT
+          amount: 8
+    - id: DIAMOND_ORE
+      type: vanilla
+      price:
+        - id: DIAMOND
+          amount: 8
+    - id: EMERALD_ORE
+      type: vanilla
+      price:
+        - id: EMERALD
+          amount: 8
+    - id: COPPER_ORE
+      type: vanilla
+      price:
+        - id: COPPER_INGOT
+          amount: 8
+    - id: NETHER_QUARTZ_ORE
+      type: vanilla
+      price:
+        - id: QUARTZ
+          amount: 8
+    - id: OCHRE_FROGLIGHT
+      type: vanilla
+      price:
+        - id: SEA_LANTERN
+          amount: 2
+    - id: VERDANT_FROGLIGHT
+      type: vanilla
+      price:
+        - id: SEA_LANTERN
+          amount: 2
+    - id: PEARLESCENT_FROGLIGHT
+      type: vanilla
+      price:
+        - id: SEA_LANTERN
+          amount: 2
+    - id: DIRT
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 1
+    - id: NETHERRACK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 2
+    - id: MAGMA_BLOCK
+      type: vanilla
+      price:
+        - id: NETHERRACK
+          amount: 8
+  "海洋":
+    - id: TUBE_CORAL_BLOCK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: BRAIN_CORAL_BLOCK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: BUBBLE_CORAL_BLOCK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: FIRE_CORAL_BLOCK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: HORN_CORAL_BLOCK
+      type: vanilla
+      price:
+        - id: COBBLESTONE
+          amount: 64
+    - id: SEAGRASS
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 16
+    - id: KELP
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 16
+    - id: TUBE_CORAL
+      type: vanilla
+      price:
+        - id: TUBE_CORAL_BLOCK
+          amount: 1
+    - id: BRAIN_CORAL
+      type: vanilla
+      price:
+        - id: BRAIN_CORAL_BLOCK
+          amount: 1
+    - id: BUBBLE_CORAL
+      type: vanilla
+      price:
+        - id: BUBBLE_CORAL_BLOCK
+          amount: 1
+    - id: FIRE_CORAL
+      type: vanilla
+      price:
+        - id: FIRE_CORAL_BLOCK
+          amount: 1
+    - id: HORN_CORAL
+      type: vanilla
+      price:
+        - id: HORN_CORAL_BLOCK
+          amount: 1
+    - id: SEA_PICKLE
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 16
+    - id: LILY_PAD
+      type: vanilla
+      price:
+        - id: WHEAT_SEEDS
+          amount: 16
+    - id: TUBE_CORAL_FAN
+      type: vanilla
+      price:
+        - id: TUBE_CORAL_BLOCK
+          amount: 1
+    - id: BRAIN_CORAL_FAN
+      type: vanilla
+      price:
+        - id: BRAIN_CORAL_BLOCK
+          amount: 1
+    - id: BUBBLE_CORAL_FAN
+      type: vanilla
+      price:
+        - id: BUBBLE_CORAL_BLOCK
+          amount: 1
+    - id: FIRE_CORAL_FAN
+      type: vanilla
+      price:
+        - id: FIRE_CORAL_BLOCK
+          amount: 1
+    - id: HORN_CORAL_FAN
+      type: vanilla
+      price:
+        - id: HORN_CORAL_BLOCK
+          amount: 1
+  "粘液科技":
+    - id: SIFTED_ORE
+      type: slimefun
+      price:
+        - id: GRAVEL
+          amount: 4
+    - id: STONE_CHUNK
+      type: slimefun
+      price:
+        - id: STONE
+          amount: 1
+    - id: COMPRESSED_CARBON
+      type: slimefun
+      price:
+        - id: DIAMOND
+          amount: 1
+    - id: SILICON
+      type: slimefun
+      price:
+        - id: QUARTZ
+          amount: 4
+    - id: COPPER_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: IRON_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: GOLD_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: ALUMINUM_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: SILVER_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: TIN_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: LEAD_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: ZINC_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: MAGNESIUM_DUST
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 1
+    - id: SULFATE
+      type: slimefun
+      price:
+        - id: MAGMA_BLOCK
+          amount: 1
+    - id: ELECTRO_MAGNET
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 11
+        - id: COPPER_DUST
+          amount: 8
+        - id: ALUMINUM_DUST
+          amount: 1
+        - id: ZINC_DUST
+          amount: 2
+        - id: SULFATE
+          amount: 2
+        - id: REDSTONE
+          amount: 1
+    - id: ELECTRIC_MOTOR
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 11
+        - id: COPPER_DUST
+          amount: 11
+        - id: ALUMINUM_DUST
+          amount: 1
+        - id: ZINC_DUST
+          amount: 2
+        - id: SULFATE
+          amount: 2
+        - id: REDSTONE
+          amount: 1
+    - id: HEATING_COIL
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 11
+        - id: COPPER_DUST
+          amount: 8
+        - id: ALUMINUM_DUST
+          amount: 1
+        - id: ZINC_DUST
+          amount: 2
+        - id: SULFATE
+          amount: 2
+        - id: REDSTONE
+          amount: 1
+    - id: BASIC_CIRCUIT_BOARD
+      type: slimefun
+      price:
+        - id: IRON_INGOT
+          amount: 36
+        - id: DIRT
+          amount: 8
+    - id: MAGIC_LUMP_3
+      type: slimefun
+      price:
+        - id: NETHER_WART
+          amount: 8
+    - id: ENDER_LUMP_3
+      type: slimefun
+      price:
+        - id: ENDER_EYE
+          amount: 8
+    - id: LENGSHANG_MTXJ
+      type: slimefun
+      price:
+        - id: REINFORCED_ALLOY_INGOT
+          amount: 8
+        - id: ELECTRO_MAGNET
+          amount: 8
+    - id: DYNATECH_VEX_GEM
+      type: slimefun
+      price:
+        - id: EMERALD_BLOCK
+          amount: 8
+  "合成锭":
+    - id: STEEL_INGOT
+      type: slimefun
+      price:
+        - id: COAL
+          amount: 8
+        - id: IRON_DUST
+          amount: 2
+    - id: DAMASCUS_STEEL_INGOT
+      type: slimefun
+      price:
+        - id: COAL
+          amount: 16
+        - id: IRON_DUST
+          amount: 4
+    - id: BRONZE_INGOT
+      type: slimefun
+      price:
+        - id: COPPER_DUST
+          amount: 2
+        - id: TIN_DUST
+          amount: 1
+    - id: BRASS_INGOT
+      type: slimefun
+      price:
+        - id: COPPER_DUST
+          amount: 2
+        - id: ZINC_DUST
+          amount: 1
+    - id: DURALUMIN_INGOT
+      type: slimefun
+      price:
+        - id: ALUMINUM_DUST
+          amount: 2
+        - id: COPPER_DUST
+          amount: 1
+    - id: BILLON_INGOT
+      type: slimefun
+      price:
+        - id: SILVER_DUST
+          amount: 2
+        - id: COPPER_DUST
+          amount: 1
+    - id: SOLDER_INGOT
+      type: slimefun
+      price:
+        - id: LEAD_DUST
+          amount: 2
+        - id: TIN_DUST
+          amount: 1
+    - id: NICKEL_INGOT
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 2
+        - id: COPPER_DUST
+          amount: 1
+    - id: COBALT_INGOT
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 3
+        - id: COPPER_DUST
+          amount: 2
+    - id: FERROSILICON
+      type: slimefun
+      price:
+        - id: IRON_DUST
+          amount: 2
+        - id: QUARTZ
+          amount: 4
+    - id: ALUMINUM_BRASS_INGOT
+      type: slimefun
+      price:
+        - id: ALUMINUM_DUST
+          amount: 2
+        - id: COPPER_DUST
+          amount: 2
+        - id: ZINC_DUST
+          amount: 1
+    - id: ALUMINUM_BRONZE_INGOT
+      type: slimefun
+      price:
+        - id: ALUMINUM_DUST
+          amount: 2
+        - id: COPPER_DUST
+          amount: 2
+        - id: TIN_DUST
+          amount: 1
+    - id: CORINTHIAN_BRONZE_INGOT
+      type: slimefun
+      price:
+        - id: COPPER_DUST
+          amount: 3
+        - id: TIN_DUST
+          amount: 1
+        - id: GOLD_DUST
+          amount: 1
+        - id: SILVER_DUST
+          amount: 1
+    - id: GOLD_24K
+      type: slimefun
+      price:
+        - id: GOLD_DUST
+          amount: 11
+    - id: GILDED_IRON
+      type: slimefun
+      price:
+        - id: GOLD_DUST
+          amount: 11
+        - id: IRON_DUST
+          amount: 1
+    - id: MAGSTEEL
+      type: slimefun
+      price:
+        - id: MAGNESIUM_DUST
+          amount: 2
+        - id: IRON_DUST
+          amount: 2
+        - id: COAL
+          amount: 8
+    - id: HARDENED_METAL_INGOT
+      type: slimefun
+      price:
+        - id: COAL
+          amount: 48
+        - id: IRON_DUST
+          amount: 4
+        - id: ALUMINUM_DUST
+          amount: 4
+        - id: COPPER_DUST
+          amount: 3
+        - id: TIN_DUST
+          amount: 1
+    - id: REDSTONE_ALLOY
+      type: slimefun
+      price:
+        - id: COAL
+          amount: 48
+        - id: IRON_DUST
+          amount: 4
+        - id: ALUMINUM_DUST
+          amount: 4
+        - id: COPPER_DUST
+          amount: 3
+        - id: TIN_DUST
+          amount: 1
+        - id: REDSTONE
+          amount: 10
+        - id: QUARTZ
+          amount: 4
+    - id: REINFORCED_ALLOY_INGOT
+      type: slimefun
+      price:
+        - id: COAL
+          amount: 64
+        - id: GOLD_DUST
+          amount: 12
+        - id: IRON_DUST
+          amount: 8
+        - id: COPPER_DUST
+          amount: 7
+        - id: ALUMINUM_DUST
+          amount: 4
+        - id: SILVER_DUST
+          amount: 3
+        - id: TIN_DUST
+          amount: 3
+        - id: LEAD_DUST
+          amount: 2
+    - id: URANIUM
+      type: slimefun
+      price:
+        - id: SIFTED_ORE
+          amount: 36
+    - id: SYNTHETIC_SAPPHIRE
+      type: slimefun
+      price:
+        - id: ALUMINUM_DUST
+          amount: 2
+        - id: GLASS
+          amount: 2
+        - id: LAPIS_LAZULI
+          amount: 1
+    - id: SYNTHETIC_EMERALD
+      type: slimefun
+      price:
+        - id: ALUMINUM_DUST
+          amount: 4
+        - id: GLASS
+          amount: 3
+        - id: LAPIS_LAZULI
+          amount: 1
+    - id: SYNTHETIC_DIAMOND
+      type: slimefun
+      price:
+        - id: DIAMOND
+          amount: 8
+    - id: CARBONADO
+      type: slimefun
+      price:
+        - id: DIAMOND
+          amount: 8
+        - id: GLASS
+          amount: 1
+  "制造":
+    - id: _FINALTECH_UNORDERED_DUST
+      type: slimefun
+      price:
+        - id: COBBLESTONE
+          amount: 172
+    - id: _FINALTECH_ORDERED_DUST
+      type: slimefun
+      price:
+        - id: COBBLESTONE
+          amount: 171
+    - id: MOMOTECH_CREATIVE
+      type: slimefun
+      price:
+        - id: COBBLESTONE
+          amount: 135
+    - id: MOMOTECH_CREATIVE_I
+      type: slimefun
+      price:
+        - id: COBBLESTONE
+          amount: 135

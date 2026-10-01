@@ -1,0 +1,43 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: TRIDENT
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"aqua","text":"海神·黄金三叉戟"}],"text":""}'
+    lore:
+      - '{"extra":[{"bold":false,"italic":false,"color":"aqua","text":"沧海翻涌，吾命所归。深海之下，唯我独尊。"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"aqua","text":"三叉所指，万物冰封，海神之怒，凝霜成域。"}],"text":""}'
+      - '{"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"aqua","text":"无定风波"},{"bold":false,"italic":false,"color":"gray","text":"：右键冻结半径15格内所有生灵并造成20伤害！"}],"text":""}'
+    enchants:
+      CHANNELING: 255
+      IMPALING: 255
+      LOYALTY: 255
+      RIPTIDE: 255
+      UNBREAKING: 255
+      MENDING: 255
+    Unbreakable: true
+    attribute-modifiers:
+      minecraft:generic.attack_damage:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 520.0
+          name: generic.attack_damage
+          slot: HAND
+          uuid: 2200002d-0000-003e-0000-004000000001
+          operation: 0
+      minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 5.0
+          name: generic.attack_speed
+          slot: HAND
+          uuid: 2200002d-0000-003e-0000-004000000002
+          operation: 0
+      minecraft:generic.reach_distance:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 520.0
+          name: generic.reach_distance
+          slot: HAND
+          uuid: 2200002d-0000-003e-0000-004000000003
+          operation: 0

@@ -1,0 +1,20 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: DIAMOND_HELMET
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§8黑曜石战盔'
+    lore:
+    - '§6水下呼吸 I'
+    - '§6潮涌能量 I'
+    - '§b防辐射'
+    - '§7用黑曜石浇筑制造而成的头盔'
+    enchants:
+      PROTECTION_EXPLOSIONS: 6
+      PROTECTION_FALL: 6
+      PROTECTION_FIRE: 6
+      PROTECTION_PROJECTILE: 6
+      PROTECTION_ENVIRONMENTAL: 6
+      DURABILITY: 10

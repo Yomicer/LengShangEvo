@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: IRON_BLOCK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§5紫水晶奇点'
+    custom-model-data: 2200630
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_紫水晶奇点"
+      }

@@ -1,0 +1,20 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: SUSPICIOUS_STEW
+  meta:
+    ==: ItemMeta
+    meta-type: SUSPICIOUS_STEW
+    display-name: '{"text":"","extra":[{"text":"超级煲","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
+    lore:
+    - '{"text":"","extra":[{"text":"一个蕴含磅礴生命能量的神奇煲汤","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    - '{"text":"","extra":[{"text":"食用后赋予短暂但恐怖的力量增幅","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+    enchants:
+      minecraft:luck_of_the_sea: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    custom-model-data: 2305119
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_超级煲"
+      }

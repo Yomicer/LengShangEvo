@@ -1,0 +1,36 @@
+# ============================================================
+# 冷殇科技 语言文件 (language_lengshang.yml)
+# 由 LSTLanguage 在插件启用时加载; 键名可自由扩展。
+# ============================================================
+
+lengshang:
+  # 通用前缀
+  prefix: "&x&F&E&3&C&3&C[&x&F&A&1&6&6&9冷&x&E&5&1&C&9&3殇&x&B&C&3&B&B&7科技&x&F&E&3&C&3&C]"
+
+  # 聚宝阁商店
+  shop:
+    title: "&c&l❀ &e聚&b宝&d阁 &c&l❀"
+    category-title: "&c❀ 聚宝阁 · {category} ❀"
+    info-name: "&c❀ 聚宝阁 ❀"
+    buy-success: "&a购买成功 ×{count}"
+    buy-fail: "&c材料不足!"
+
+  # 指南组别按钮
+  buttons:
+    jubaoge: "聚宝阁"
+    tiangou: "舔狗语录"
+    yiyan: "随机一言"
+    emo: "emo文案"
+    shanggan: "伤感语录"
+
+  # 语录获取失败提示 (语录内容来自在线 API)
+  quotes:
+    failed: "&c&l获取语录失败!"
+
+  # 清除器提示
+  cleaner:
+    cleared: "&a已清除 {count} 个目标"
+
+  # 造物主编码器
+  encoder:
+    hint: "&7把写有粘液物品 ID 的命名牌放入输入口, 即可凭空创造对应物品"

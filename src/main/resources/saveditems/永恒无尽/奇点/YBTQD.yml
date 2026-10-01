@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: BRICKS
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§6原版铜奇点'
+    custom-model-data: 2200622
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_原版铜奇点"
+      }

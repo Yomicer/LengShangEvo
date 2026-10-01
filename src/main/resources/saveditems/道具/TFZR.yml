@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: NETHERITE_SWORD
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"#00FFFF","text":"天罚之刃"}],"text":""}'
+    lore:
+      - '{"extra":[{"bold":false,"italic":false,"color":"#00FFFF","text":"「雷霆万钧，天罚降临」"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"dark_gray","text":"掌控雷霆之力的神器，挥动间引动九天神雷"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"#00FFFF","text":"天罚"},{"bold":false,"italic":false,"color":"gray","text":"：每次攻击有20%概率召唤"},{"bold":false,"italic":false,"color":"#00FFFF","text":"落雷"}],"text":""}'
+    enchants:
+      DAMAGE_ALL: 5
+    Unbreakable: true

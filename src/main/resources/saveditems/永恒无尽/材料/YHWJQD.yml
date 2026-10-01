@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: SMOOTH_QUARTZ
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§9永§6恒§e无§a尽§c奇§b点'
+    lore:
+      - '§7汝掌心中者，寰宇之力也'
+    custom-model-data: 2200627
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_永恒无尽奇点"
+      }

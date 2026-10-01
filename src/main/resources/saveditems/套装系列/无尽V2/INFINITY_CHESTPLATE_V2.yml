@@ -1,0 +1,41 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: NETHERITE_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§d无尽胸甲 §b§lv2'
+    lore:
+    - '§6力量 III'
+    - '§6抗性提升 II'
+    - '§6防火 II'
+    - '§b防辐射'
+    - '§b蜜蜂毒针保护'
+    - '§b鞘翅动能免疫'
+    enchants:
+      PROTECTION_ENVIRONMENTAL: 35
+      THORNS: 12
+    attribute-modifiers:
+      GENERIC_MAX_HEALTH:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 5.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.max_health]
+        slot: CHEST
+        uuid: 31e012e1-d90f-49fd-94b5-172b36e9f41e
+        operation: 0
+      GENERIC_ARMOR:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor]
+        slot: CHEST
+        uuid: 85db7cc8-f78b-4a60-b4c7-4f89b112f1d4
+        operation: 0
+      GENERIC_ARMOR_TOUGHNESS:
+      - ==: org.bukkit.attribute.AttributeModifier
+        amount: 10.0
+        name: ResourceKey[minecraft:attribute / minecraft:generic.armor_toughness]
+        slot: CHEST
+        uuid: 49ca64b5-9d9a-4b0b-ab56-6048e979f4ec
+        operation: 0
+    Unbreakable: true

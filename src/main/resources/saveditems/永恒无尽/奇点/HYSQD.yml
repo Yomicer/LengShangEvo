@@ -1,0 +1,13 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: COAL_BLOCK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '§8黑曜石奇点'
+    custom-model-data: 2200621
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "LENGSHANG_黑曜石奇点"
+      }

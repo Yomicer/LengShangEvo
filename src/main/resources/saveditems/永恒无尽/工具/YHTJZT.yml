@@ -1,0 +1,17 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3955
+  type: BUCKET
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"远","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFFFF","bold":false},{"text":"海","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FFCCF","bold":false},{"text":"吞","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF99F","bold":false},{"text":"鲸","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF66F","bold":false},{"text":"之","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF33F","bold":false},{"text":"桶","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0FF00F","bold":false}]}'
+    enchants:
+      minecraft:luck_of_the_sea: 1
+    ItemFlags:
+    - HIDE_ENCHANTS
+    Unbreakable: true
+    PublicBukkitValues: |-
+      {
+          "slimefun:slimefun_item": "DYNATECH_LIQUID_TANK"
+      }

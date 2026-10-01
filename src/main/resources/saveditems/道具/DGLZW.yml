@@ -1,0 +1,15 @@
+item:
+  ==: org.bukkit.inventory.ItemStack
+  v: 3700
+  type: NETHERITE_SWORD
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"extra":[{"bold":true,"italic":false,"color":"#ff0040","text":"德古拉之吻"}],"text":""}'
+    lore:
+      - '{"extra":[{"bold":false,"italic":false,"color":"#ff0040","text":"「以血还血，以吻封缄」"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"dark_gray","text":"传说中，德古拉伯爵用此剑赐予永生"}],"text":""}'
+      - '{"extra":[{"bold":false,"italic":false,"color":"#ff0040","text":"吸血"},{"bold":false,"italic":false,"color":"gray","text":"：将造成伤害的20%转换为生命值"}],"text":""}'
+    enchants:
+      DAMAGE_ALL: 5
+    Unbreakable: true
